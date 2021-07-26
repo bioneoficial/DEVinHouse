@@ -16,41 +16,50 @@
 <body class="bg-light text-dark">
   <div class="container">
     <header>
-    <h1 style="margin-top: 5px" class="text-center"> <label for="itemInput">ToDoList</label></h1>
-  </header>
-  <main>
-    <div class="form-group">
-      <input type="text" class="form-control" id="itemInput" placeholder="Type your assignment here">
-    </div>
-    <div class=" container btn-group">
-      <button id="addButton" class="btn btn-primary">Add to list</button>
-      <button id="clearButton" class="btn btn-danger">Clear all list</button>
-    </div>
-    <h2 class="text-center">Assignments</h2>
-    <ul class="text-break" id="toDoList"></ul>
-  </div>
-</main>
-<footer>
-  <div class="container d-flex  justify-content-center p-5">
-    <div class="card" style="width: 18rem;">
-      <img src="./assets/images/cardimg.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">João Bione</h5>
-        <p class="card-text">Em breve desenvolvedor Zapper</p>
+      <h1 style="margin-top: 5px; text-shadow: 1px 1px #1d1c1c;" class="text-center"> <label for="itemInput">ToDoList</label></h1>
+    </header>
+    <main>
+      <div class="form-group">
+        <input type="text" class="form-control" id="itemInput" placeholder="Type your assignment here">
       </div>
-      <ul class="list-group list-group-flush text-center">
-        <li class="list-group-item"> 
-          <a  target="_blank" href="https://github.com/bioneoficial"><img class="img-fluid me-2" data-toggle="tooltip" data-placement="top" title="Github Repository"  src="./assets/images/GitHub-Mark-32px.png" alt="github"></a>Github</li>
-        <li class="list-group-item"> <a target="_blank" href="https://www.linkedin.com/in/joao-bione/"><img  class="img-fluid" data-toggle="tooltip" data-placement="top" title="LinkedIn Profile"  src="./assets/images/LI-In-Bug.png" alt="LinkedIn"></a> LinkedIn</li>
-        <li class="list-group-item"> <a target="_blank" href="https://www.instagram.com/joaobione/"><img  class="img-fluid me-2" data-toggle="tooltip" data-placement="top" title="Instagram Profile"  src="./assets/images/6636566_instagram_social media_social network_icon.svg" alt="Instagram"></a>Instagram</li>
-      </ul>
-      <div class="card-body text-center">
-        <a href="https://www.contazap.com.br/" target="_blank" class="card-link text-decoration-none">Conta Zap</a>
-        <a href="https://www.youtube.com/watch?v=OZhqPbfyb_M" target="_blank" class="card-link text-decoration-none">Code Playlist</a>
+      <div class=" container btn-group justify-content-between">
+        <button id="addButton" class="btn btn-primary rounded-pill">Add to list</button>
+        <button id="clearButton" class="btn btn-danger rounded-pill">Clear all list</button>
+      </div>
+      <h2 style="text-shadow: 1px 1px #1d1c1c;" class="text-center">Assignments</h2>
+      <ul class="text-break" id="toDoList"></ul>
+  </div>
+  </main>
+  <footer>
+    <div class="container d-flex  justify-content-center p-5">
+      <div class="card" style="width: 18rem;">
+        <img src="./assets/images/cardimg.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">João Bione</h5>
+          <p class="card-text">Em breve desenvolvedor Zapper</p>
+        </div>
+        <ul class="list-group list-group-flush text-center">
+          <li class="list-group-item">
+            <a target="_blank" href="https://github.com/bioneoficial"><img class="img-fluid me-2" data-toggle="tooltip"
+                data-placement="top" title="Github Repository" src="./assets/images/GitHub-Mark-32px.png"
+                alt="github"></a>Github
+          </li>
+          <li class="list-group-item"> <a target="_blank" href="https://www.linkedin.com/in/joao-bione/"><img
+                class="img-fluid" data-toggle="tooltip" data-placement="top" title="LinkedIn Profile"
+                src="./assets/images/LI-In-Bug.png" alt="LinkedIn"></a> LinkedIn</li>
+          <li class="list-group-item"> <a target="_blank" href="https://www.instagram.com/joaobione/"><img
+                class="img-fluid me-2" data-toggle="tooltip" data-placement="top" title="Instagram Profile"
+                src="./assets/images/6636566_instagram_social media_social network_icon.svg"
+                alt="Instagram"></a>Instagram</li>
+        </ul>
+        <div class="card-body text-center">
+          <a href="https://www.contazap.com.br/" target="_blank" class="card-link text-decoration-none">Conta Zap</a>
+          <a href="https://www.youtube.com/watch?v=OZhqPbfyb_M" target="_blank"
+            class="card-link text-decoration-none">Code Playlist</a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
   <script type="text/javascript" src="./assets/js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

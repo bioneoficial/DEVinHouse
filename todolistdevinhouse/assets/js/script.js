@@ -39,7 +39,7 @@ function createItem(text, status) {
   // itemList.className = ' text-break';
 
   let itemCompleteBtn = document.createElement('button');
-  itemCompleteBtn.className = 'btn btn-success';
+  itemCompleteBtn.className = 'btn btn-success float-end rounded-pill';
   itemCompleteBtn.innerText = status == 'complete' ? 'Incomplete' : 'Complete';
   if (status == 'incomplete') {
     itemCompleteBtn.addEventListener('click', handleToComplete);
@@ -50,12 +50,12 @@ function createItem(text, status) {
   let itemDeleteBtn = document.createElement('button');
   itemDeleteBtn.addEventListener('click', removeItem);
   itemDeleteBtn.innerText = 'Delete';
-  itemDeleteBtn.className = 'btn btn-danger';
+  itemDeleteBtn.className = 'btn btn-danger float-end rounded-pill';
 
   let itemEditBtn = document.createElement('button');
   itemEditBtn.addEventListener('click', editItem);
   itemEditBtn.innerText = 'Edit';
-  itemEditBtn.className = 'btn btn-warning';
+  itemEditBtn.className = 'btn btn-warning float-end rounded-pill';
 
   itemList.appendChild(itemDiv);
   itemList.appendChild(itemDeleteBtn);
@@ -87,29 +87,29 @@ function removeItem() {
 // funcao para editar item pelo edit button e no localstorage tb
 function editItem(elem) {
   //alert(elem.target.parentNode.id) // com isso eu pego o id da array do pai
-  
+
   var editValue = prompt('Insira sua edição');
-  if(editValue === null ){
+  if (editValue === null) {
     return false;
-  }else{
+  } else {
     let oldContent = this.parentElement.firstChild.innerText;
     for (let i = 0; i < listArray.length; i++) {
       if (listArray[i].data === oldContent) {
-        var newStatus = listArray[i].status ;
+        var newStatus = listArray[i].status;
         listArray.splice(i, 1);
         checkLocal();
         break;
       }
     }
-  let parent = elem.target.parentNode;
-  parent.firstChild.innerText = editValue;
+    let parent = elem.target.parentNode;
+    parent.firstChild.innerText = editValue;
 
-  let newItem = new itemListStorage();
-  newItem.data = editValue;
-  newItem.status = newStatus;
-  listArray.push(newItem);
-  checkLocal();
-}
+    let newItem = new itemListStorage();
+    newItem.data = editValue;
+    newItem.status = newStatus;
+    listArray.push(newItem);
+    checkLocal();
+  }
   //UniqueIdArray array com ids
   //melhorar essa funcionalidade com input pop pegando por id, provavelmente mudar minha lógica(?).
 }
@@ -169,5 +169,5 @@ function myStorage() {
       toDoList.appendChild(item);
     }
   }
-};
+}
 myStorage();

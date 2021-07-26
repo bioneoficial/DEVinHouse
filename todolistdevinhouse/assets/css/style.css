@@ -1,7 +1,3 @@
-/*#toDoList div {
-  max-width: 70%;
-} */
-
 #toDoList li {
   list-style-type: none;
   margin: 15px;
@@ -21,17 +17,13 @@
   margin: 10px;
 }
 
-.btn-group {
-  justify-content: space-between;
-}
 .btn {
   max-width: 10%;
   max-height: 38px;
-  float: right;
   margin: 5px;
 }
 
-.img-fluid{
+.img-fluid {
   max-width: 32px;
   max-height: 32px;
   min-width: 32px;
