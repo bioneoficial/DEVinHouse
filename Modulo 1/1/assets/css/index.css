@@ -1,0 +1,87 @@
+body{
+  background-color: yellow;
+  margin: 0;
+}
+
+
+ul{
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;  
+}
+
+li{
+  margin: 5px;
+}
+nav{
+  position: sticky;  
+  top: 0;
+  background-color: #cae8ca;
+  height: 55px;
+
+  
+  
+}
+.navBar{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+a{
+  text-decoration: none;
+}
+ul li a:hover{
+background-color: tomato;
+}
+
+h1{
+  font: 20px Verdana;
+color: brown;
+background: url("https://photo-cdn2.icons8.com/pfw-Rffq-i7aLZdhp6j81gOcNmPGLTWqkXnitsU7r-Q/rs:fit:1072:1072/Z3M6Ly9tb29zZTIv/YXNzZXRzL3NhdGEv/b3JpZ2luYWwvMTQv/NTJkNGNjYWEtYmQy/Mi00NDVhLTljZWUt/MzA2MzhiYmM5NGNh/LmpwZw.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+.mainTitle{
+  width: 100%;
+  text-align: center;
+
+}
+
+
+p{
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+
+button{
+  border-radius:27px;
+  padding: 10px;
+  border: 2px solid black;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+h2{
+  margin-left: 10px;
+}
+iframe{
+  margin-left: 10px;
+}
+
+footer{
+  margin-top:7%;
+  height: 77px;
+  background-color: black;
+  color: white;
+}
+ footer p {
+   padding-top: 4px;
+   line-height: 1.6;
+   letter-spacing: 1px;
+   margin-right: 10px;
+ }
+
