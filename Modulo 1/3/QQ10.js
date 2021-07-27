@@ -15,7 +15,7 @@ function createItem(content) {
   results.appendChild(itemResult);
 
   return itemResult;
-};
+}
 
 function paCalc() {
   var paArray = [];
@@ -39,7 +39,7 @@ function paCalc() {
   } else {
     return false;
   }
-};
+}
 
 function pgCalc() {
   var pgArray = [];
@@ -60,7 +60,7 @@ function pgCalc() {
   } else {
     return false;
   }
-};
+}
 
 function checkin(pa, pg) {
   if (pa == '' || pg == '') {
@@ -68,8 +68,8 @@ function checkin(pa, pg) {
   } else {
     return true;
   }
-};
+}
 
-function reset(){
-  results.innerHTML= '';
+function reset() {
+  results.innerHTML = '';
 }

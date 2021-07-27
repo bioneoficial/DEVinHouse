@@ -60,4 +60,3 @@ console.log(conta1);
 // tomar cuidado com essa abertura do js em por var.algo e ele aceitar esse algo, mesmo não tendo ele no constructor, prova abaixo
 //conta1.arroz = 'feijão';
 //console.log(conta1.arroz); nunca fazer isto, sempre usar a versao como esta na linha 53, pelo - é no que eu acredito kkk class dentro de class dentro de classe? dificiu
-
