@@ -4,7 +4,36 @@ class quadrado {
   }
 }
 quadrado.lado = 2;
-//console.log(quadrado.lado);
+
+const states = {
+  AC: 'AC',
+  AL: 'AL',
+  AP: 'AP',
+  AM: 'AM',
+  BA: 'BA',
+  CE: 'CE',
+  DF: 'DF',
+  ES: 'ES',
+  GO: 'GO',
+  MA: 'MA',
+  MT: 'MT',
+  MS: 'MS',
+  MG: 'MG',
+  PA: 'PA',
+  PB: 'PB',
+  PR: 'PR',
+  PE: 'PE',
+  PI: 'PI',
+  RJ: 'RJ',
+  RN: 'RN',
+  RS: 'RS',
+  RO: 'RO',
+  RR: 'RR',
+  SC: 'SC',
+  SP: 'SP',
+  SE: 'SE',
+  TO: 'TO',
+};
 
 class endereco {
   constructor(logradouro, numero, cidade, estado, pais, cep) {
@@ -15,21 +44,32 @@ class endereco {
     this.pais = pais;
     this.cep = cep;
   }
+  stateValidation() {
+    let valid = false;
+    let msgError = 'Estado invalido';
+    const stateList = Object.values(states);
+    stateList.forEach(element => {
+      if (this.estado == element) {
+        valid = true;
+      }
+    });
+    if (valid == true) {
+      return valid;
+    } else {
+      this.estado = '';
+      return msgError;
+    }
+  }
 }
-endereco.logradouro = 'Rua DEV';
-endereco.numero = 200;
-endereco.cidade = 'Cala Boca';
-endereco.estado = 'RJ';
-endereco.pais = 'BR';
-endereco.cep = 24110001;
 
-//console.log(endereco.logradouro);
-//console.log(endereco.numero);
-//console.log(endereco.cidade);
-//console.log(endereco.estado);
-//console.log(endereco.pais);
-//console.log(endereco.cep);
-
+const endereco1 = new endereco();
+endereco1.logradouro = 'Rua DEV';
+endereco1.numero = 200;
+endereco1.cidade = 'Cala Boca';
+endereco1.estado = 'RJ';
+endereco1.pais = 'BR';
+endereco1.cep = 24110001;
+console.log(endereco1.stateValidation());
 class cliente {
   constructor(nome, cpf, endereco, numCelular) {
     this.nome = nome;
@@ -38,10 +78,9 @@ class cliente {
     this.numCelular = numCelular;
   }
 }
-const cliente1 = new cliente('Bione', 15816746782, endereco, 995177140);
+const cliente1 = new cliente('Bione', 15816746782, endereco1, 995177140);
 cliente1.endereco.cep = 220;
-//console.log(cliente1.endereco.cep);
-// aqui ele pega oatributo cep da class endereco e atribui valor dentro do cliente1;
+
 class conta {
   constructor(numConta, saldo, cliente) {
     this.numConta = numConta;
@@ -49,14 +88,14 @@ class conta {
     this.cliente = cliente;
   }
 }
-const conta1 = new conta(999, 666, cliente);
-conta1.cliente.nome = 'José';
-conta1.cliente.cep = 48167946782;
-conta1.cliente.cpf = 197986;
-// console.log(conta1.cliente.cep) provando que funciona
-//conta1.cep = 921
-//console.log(conta1.cep); outra prova
-console.log(conta1);
-// tomar cuidado com essa abertura do js em por var.algo e ele aceitar esse algo, mesmo não tendo ele no constructor, prova abaixo
-//conta1.arroz = 'feijão';
-//console.log(conta1.arroz); nunca fazer isto, sempre usar a versao como esta na linha 53, pelo - é no que eu acredito kkk class dentro de class dentro de classe? dificiu
+const conta1 = new conta(
+  999,
+  666,
+  new cliente(
+    'Dione',
+    '996',
+    new endereco('ceu', '45', 'floripa', 'SC', 'BR', 265870),
+    '987654'
+  ),
+  '6023'
+);
