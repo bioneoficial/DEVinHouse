@@ -84,8 +84,7 @@ class cliente {
   validaCPF() {
     let trueCPF = 'CPF válido';
     let falseCPF = 'Digite um CPF válido';
-    let  thisCPF = this.cpf;
-   thisCPF = String(thisCPF);
+    let  thisCPF = String(this.cpf);
     let Soma = 0,
       Resto,
       i;
@@ -126,7 +125,7 @@ class cliente {
 }
 const cliente1 = new cliente('Bione', 15816746782, endereco1, 995177140);
 
-//console.log(cliente1.validaCPF());
+console.log(cliente1.validaCPF());
 
 
 class conta {
