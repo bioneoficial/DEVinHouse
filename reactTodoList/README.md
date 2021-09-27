@@ -1,6 +1,6 @@
 
   # Todo List in React
-This is a project to a todo list in react, using Material Ui to Styled, this app use a Local Storage to save the Todo List items.
+This is a project of todo list in react, using Material Ui to Styled, this app uses Local Storage to save the List items.
 
 ## Features 
 ARRUMAR
@@ -25,14 +25,14 @@ ARRUMAR
 ## How run this Project
   
 In the project directory, you can run:
-  
+### `npm install`
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
+The page will reload if you make edits.
 
 You will also see any lint errors in the console.
 
