@@ -14,7 +14,7 @@ ARRUMAR
  - [X] O usuário pode deletar task unitária.
 
  ## Known Bugs
- - [X] a interação duplo-click nos post-its pela tabela de somente 'itens concluidos' ou com a lixeira da mesma, faz os itens do array com
+ - [X] A interação duplo-click nos post-its pela tabela de somente 'itens concluidos' ou com a lixeira da mesma, faz os itens do array com
   check === false serem deletados, o item em questão passa pra false normalmente e os outros trues continuam a existir.
 	Esse mesmo tipo de interação pela tabela de 'Itens pendentes' não tem este BUG, por causa disso deixei a tabela de pendentes aparecendo tanto done = false e done = true
 	Mas se não fosse por este bug que  ainda não consegui corrigir, era só passar um ternário no listItems retornando filter só os check ===false, o oposto que faço na tabela dos true,
